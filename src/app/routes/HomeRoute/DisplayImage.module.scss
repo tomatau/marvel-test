@@ -1,0 +1,47 @@
+$white: #fff;
+$black-grey: #333;
+$button-grey: #f9f9f9;
+$button-greyer: #e9e9e9;
+$button-greying: #dcdcdc;
+
+.wrapper {
+  border: 4px solid $black-grey;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  // constrain image to it's own width
+  max-width: 100%;
+  // scale around center
+  transform-origin: center center;
+
+  .ready {
+    opacity: 1;
+  }
+}
+
+.controls {
+  margin: 10px;
+}
+
+.button {
+  background: linear-gradient(to bottom, $button-grey 5%, $button-greyer 100%);
+  background-color: $button-grey;
+  border: 1px solid $button-greying;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 0 0 $white;
+  color: $black-grey;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 $white;
+
+  &[disabled] {
+    color: $button-greyer;
+  }
+}

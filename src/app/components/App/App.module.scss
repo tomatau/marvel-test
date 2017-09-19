@@ -1,0 +1,12 @@
+@import '~vars';
+@import '~tao-scss/index';
+
+.app {
+  color: $font-color;
+  
+  font: {
+    size: rem(17px);
+  }
+}
+
+.content {}
